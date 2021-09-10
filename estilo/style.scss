@@ -1,6 +1,9 @@
+*{
+  padding: 0px;
+}
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background-image: radial-gradient(circle at center, #42464f, #5f646f);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -8,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://cdn.pixabay.com/photo/2021/01/28/16/55/whiskey-5958516_960_720.jpg);
+  //background-image: url(https://cdn.pixabay.com/photo/2021/01/28/16/55/whiskey-5958516_960_720.jpg);
   font-weight: 300;
 }
 .all {
@@ -21,6 +24,7 @@ body {
   justify-content: center;
   transform-style: preserve-3d;
 }
+
 .all:hover {
   perspective: 1000px;
   transition: all 1.3s ease-in;
@@ -71,7 +75,7 @@ body {
   color: #fff;
   text-shadow: 0 0 5px rgba(100, 100, 255, .6)
 }
-.lefter {
+ .lefter{
   transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
   background-image: url(https://cdn3.iconfinder.com/data/icons/wine-and-vineyard-icons/512/Prosecco_Bottle_and_Glass-256.png);
   
@@ -108,8 +112,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
 .ref {
   background-color: #000;
   background-image: linear-gradient(to bottom, #d80, #c00);
@@ -126,3 +128,26 @@ body {
     font-size: 12px;
   }
 }
+
+
+
+.container--head {
+  background: transparent;
+  padding: 0px;
+  border-radius: 10
+}
+
+.tooltip-carousel {
+  position: absolute;
+  z-index: 11;
+  border-radius: 50%;
+}
+
+.caraousel-tooltip-item {
+  display: none;
+}
+
+.caraousel-tooltip-item.active {
+  display: block;
+}
+
